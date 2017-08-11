@@ -1,0 +1,49 @@
+-----------------------------------------------------------------------------------------------------------
+FILEZILLA CONNECTION/phpmyadmin
+Host: 11902.whserv.de
+User: xa03
+Pwd: Pwd_nn
+-----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+MAGENTO 2.x SERVER INSTALLATION BY COMPOSER (via Telnet)
+1. 
+
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+2.  Before going to install Go to https://11902.whserv.de and delete the previous database. and make a new database. 
+3.
+php bin/magento setup:install --base-url=http://www.homeosymbol.com/ \
+--base-url-secure=https://www.homeosymbol.com \
+--db-host=localhost --db-name=xa03_db1 \
+--db-user=xa03 --db-password=Armario_09 \
+--admin-firstname=Martin --admin-lastname=Bomhardt --admin-email=mb@homsym.de \
+--admin-user=IT --admin-password=Armario_09 --language=en_US \
+--currency=EUR --timezone=Europe/Berlin --cleanup-database \
+--sales-order-increment-prefix="ORD$" --session-save=db --use-rewrites=1 \
+--use-secure-admin=1
+
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+complete uninstall magento2
+
+php bin/magento setup:uninstall
+
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+database  Permission errors in Magento Installation
+go to www/setup/src/Magento/Setup/Validator/DbValidator.php
+click on file and grant it full permission.
+
+then open Dbvalidator.php and add return true; here
+ private function checkDatabasePrivileges(\Magento\Framework\DB\Adapter\AdapterInterface $connection, $dbName)
+
+    {
+		return true;
+-----------------------------------------------------------------------------------------------------------
+4. run php bin/magento setup:upgrade
+5. php bin/magento setup:di:compile
+

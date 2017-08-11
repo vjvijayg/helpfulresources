@@ -1,0 +1,27 @@
+                     
+					 
+	 -----------------------------------------------------------------------------------------------------------
+					 To see all magento commands:
+                        www$ php bin/magento
+	------------------------------------------------------------------------------------------------------------
+						
+						-----------------------------------------------------------------------------------------------------------
+						                                    Magento commands
+						-----------------------------------------------------------------------------------------------------------
+ cache:clean                               
+ cache:disable                             
+ cache:enable                              
+ cache:flush                                 
+ info:adminuri                             Displays the Magento Admin URI
+ module:disable                            Disables specified modules
+ module:enable                             Enables specified modules
+ module:status                             Displays status of modules
+ module:uninstall                          Uninstalls modules installed by compo  
+ sampledata:deploy                         Deploy sample data modules
+ sampledata:remove                         Remove all sample data packages 
+ www$ php bin/magento setup:backup 170627 complete                             Takes backup of Magento Application c   
+ setup:rollback                            Rolls back Magento Application codeba   
+ www$ php bin/magento setup:di:compile
+ www$ php bin/magento setup:upgrade
+ -----------------------------------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------------------

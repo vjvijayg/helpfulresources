@@ -1,0 +1,15 @@
+Usefull notes for the Magento 2
+
+1. Disable Magento cache
+
+Disabling Magento cache during development will save you some time because you won’t need to manually flush the cache every time you make changes to your code.
+
+The easiest way to disable cache is to go to Admin → System → Cache Management → select all cache types and disable them.
+
+2. Put Magento into a developer mode
+
+You should put Magento into a developer mode to ensure that you see all the errors Magento is throwing at you.
+
+In order to do this, open your terminal and go to the Magento 2 root. From there you should run the following command:
+
+php bin/magento deploy:mode:set developer

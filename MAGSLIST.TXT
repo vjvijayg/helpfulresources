@@ -1,0 +1,114 @@
+
+ att_code                                 type calctable f_expo 
+ store                                    S    _A        .T.    
+ websites                                 T    _B        .T.    
+ attribute_set                            T    _C        .T.    
+ type                                     T    _D        .T.    
+ categories                               S    _E        .T.    
+ sku                                      T    _F        .T.    
+ has_options                              N    _G        .T.    
+ name                                     S    _H        .T.    
+ meta_title                               S    _I        .T.    
+ meta_description                         S    _J        .T.    
+ image                                    T    _K        .T.    
+ small_image                              T    _L        .T.    
+ thumbnail                                T    _M        .T.    
+ options_container                        T    _N        .T.    
+ url_key                                       _O        .F.    
+ msrp_display_actual_price_type           T    _P        .T.    
+ gift_message_available                   T    _Q        .T.    
+ oa_authors_sm                            S    _R        .T.    
+ oa_register                              S    _S        .T.    
+ oa_playtime                              S    _T        .T.    
+ oa_authors_tf                            S    _U        .T.    
+ status                                   T    _V        .T.    
+ visibility                               S    _W        .T.    
+ quantity_and_stock_status                T    _X        .T.    
+ tax_class_id                             T    _Y        .T.    
+ oa_test_textswatch                       T    _Z        .T.    
+ oa_sound                                 T    AA        .T.    
+ price                                    N    AB        .T.    
+ description                              M    AC        .T.    
+ short_description                        M    AD        .T.    
+ meta_keyword                             S    AE        .F.    
+ oa_table_of_content                      S    AF        .T.    
+ oa_event_info                            S    AG        .T.    
+ oa_hinweis                               S    AH        .T.    
+ oa_author_bio                            S    AI        .T.    
+ gallery                                  T    AJ        .F.    
+ qty                                      N    AK        .T.    
+ min_qty                                  N    AL        .T.    
+ use_config_min_sale_qty                  N    AM        .T.    
+ is_qty_decimal                           N    AN        .T.    
+ backorders                               N    AO        .T.    
+ use_config_backorders                    N    AP        .T.    
+ min_sale_qty                             N    AQ        .T.    
+ use_config_min_sale_qty                  N    AR        .T.    
+ max_sale_qty                             N    AS        .T.    
+ use_config_max_sale_qty                  N    AT        .T.    
+ is_in_stock                              N    AU        .T.    
+ notify_stock_qty                         N    AV        .T.    
+ use_config_notify_stock_qty              N    AW        .T.    
+ manage_stock                             N    AX        .T.    
+ use_config_manage_stock                  N    AY        .T.    
+ stock_status_changed_auto                N    AZ        .T.    
+ use_config_qty_increments                N    BA        .T.    
+ qty_increments                           N    BB        .T.    
+ use_config_enable_qty_inc                N    BC        .T.    
+ enable_qty_increments                    N    BD        .T.    
+ is_decimal_divided                       N    BE        .T.    
+ website_id                               N    BF        .T.    
+ used_attribute                           T    BG        .T.    
+ child_products_sku                       S    BH        .T.    
+ samples_title                            S    BI        .T.    
+ links_title                              S    BJ        .T.    
+ swatch_image                                  BK        .F.    
+ links_purchased_separately               N    BL        .T.    
+ medium                                   S    BM        .T.    
+ downloadable_product_options             S    BN        .F.    
+ link_can_purchase_separately             N    BO        .T.    
+ weight                                   N    BP        .T.    
+ related_skus                                  BQ        .F.    
+ oa_authors_sm                            S    BQ        .T.    
+ related_position                              BR        .F.    
+ crosssell_skus                                BS        .F.    
+ crosssell_position                            BT        .F.    
+ upsell_skus                                   BU        .F.    
+ upsell_position                               BV        .F.    
+ additional_images                             BW        .F.    
+ additional_image_labels                       BX        .F.    
+ hide_from_product_page                        BY        .F.    
+ bundle_price_type                             BZ        .F.    
+ bundle_sku_type                               CA        .F.    
+ bundle_price_view                             CB        .F.    
+ bundle_weight_type                            CC        .F.    
+ bundle_values                                 CD        .F.    
+ bundle_shipment_type                          CE        .F.    
+ configurable_variations                       CF        .T.    
+ associated_skus
+                              CG        .T.    
+ configurable_variation_labels                 CG        .T.    
+ special_price                                 OX        .F.    
+ special_price_from_date                       PX        .F.    
+ special_price_to_date                         QX        .F.    
+ store_view_code                               XA        .F.    
+ thumbnail_image_label                    S    XA        .T.    
+ swatch_image_label                            XC        .F.    
+ created_at                               S    XD        .T.    
+ updated_at                               S    XE        .T.    
+ new_from_date                                 XF        .F.    
+ new_to_date                                   XG        .F.    
+ options_container                        T    XH        .T.    
+ map_price                                     XI        .F.    
+ msrp_price                                    XJ        .F.    
+ map_enabled                                   XK        .F.    
+ custom_design                                 XM        .F.    
+ custom_design_from                            XN        .F.    
+ custom_design_to                              XO        .F.    
+ custom_layout_update                          XP        .F.    
+ page_layout                                   XQ        .F.    
+ country_of_manufacture                        XT        .F.    
+ additional_attributes                    S    XU        .T.    
+ base_image_label                         S    XW        .T.    
+ small_image_label                        S    XY        .T.    
+

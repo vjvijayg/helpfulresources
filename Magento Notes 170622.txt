@@ -1,0 +1,58 @@
+
+http://www.homeosymbol.com/admin_1uq6lu
+
+=========================================================================================
+BASIS KONFIGURATION NACH REINSTALL
+=========================================================================================
+1) SHOP DEMO MODE
+Admin/Content -> Configuration -> Design -> HTML Head -> Display demo store notice -> yes/no.
+
+2) GERMAN LAW / GERMAN LANGUAGE
+COMP-MAN: magenerds/module-germanlaw
+
+Falls COMP-MAN Fehlermeldung bei "Check Cron Script": Found non-writable path(s):
+/home/www/app/design/adminhtml/Magento
+-> Pfad anlegen (Magento) und ab design auf 777 stellen
+
+3a) IMPRESSUM
+(Magenerds Germanlaw muss installiert sein.)
+- Content/Pages/Impressum
+- HTML-Code aus aktueller impressum_default_magento.htm von Homsym reinkopieren und Anfangstext editieren:
+
+3b) DATENSCHUTZ
+- Content/Pages/Privacy Policy
+- HTML-Code aus aktueller privacy_default_magento.htm von Homsym reinkopieren und Anfangstext editieren:
+
+4) IMPRESSUM ANBINDUNG
+Im Content/Block/Footer-Links
+dort in der Liste:
+<li class="nav item"><a href="{{store url="impressum"}}">Impressum</a></li>
+
+5) COOKIES HINWEIS
+Installieren:
+Hellobrave/Core
+Hellobrave/Cookie-Compliance
+
+Editierung des Spruchs:
+This website requires cookies to provide all of its features. By using our website, you agree to our use of cookies.
+Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. 
+Weitere Informationen zu Cookies erhalten Sie in unserer Datenschutzerklärung
+
+
+=======================================
+Program für creating product-attributes
+=======================================
+magento 2 create product attributes program
+https://blog.mdnsolutions.com/magento-2-create-product-attributes-and-options-programmatically/
+https://www.atwix.com/magento/adding-attribute-programatically-magento2/
+
+--------------------------------------------------------------------------------------------------------------------
+How to fix the most common issues in Magento 2
+
+https://blog.amasty.com/fix-common-issues-magento-2/
+---------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------
+Magento 2 installation on local host through composer
+https://www.appseconnect.com/how-to-install-magento-2-on-xampp-server-localhost/
+----------------------------------------------------------------------------------------------------------------------

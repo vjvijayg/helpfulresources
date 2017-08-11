@@ -1,0 +1,124 @@
+-----------------------------------------------------------------------------------------------------------
+                                               magento admin panel
+http://www.homeosymbol.com/admin_1pec7s
+-----------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------
+magento password :  EMUx61K9T15Icmrn
+Armario_09
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------
+                                               Installing magento sample data:
+											   
+ General Command : php <your Magento install dir>/bin/magento setup:upgrade
+ 
+ 1. xa03@11902:~/www$ php bin/magento sampledata:deploy
+ 2. xa03@11902:~/www$ php bin/magento setup:upgrade
+ 3. xa03@11902:~/www$ php bin/magento setup:di:compile
+ -----------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                         Add Product Attributes:
+
+ <MAGENTO_DIR>/app/code/EXTENSION_NAMESPACE/PACKAGE_NAME/Setup/UpgradeData.php
+ 
+ http://www.homeosymbol.com/app/code/Aehmir/AddAttributes/Setup/UpgradeData.php  
+ If file does not exist in that specific folder(filezilla) then go to (file zilla, magento test server X-03,,,, Home>www>app>code>Aehmir>/AddAttributes/Setup/UpgradeData)
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ -----------------------------------------------------------------------------------------------------------
+                                          To check new module in Magento(we installed by ourself)
+										  admin panel>store>configuration>advance>advance .
+	----------------------------------------------------------------------------------------------------------									  -----------------------------------------------------------------------------------------------------------
+										 
+										 
+										 
+										 -----------------------------------------------------------------------------------------------------------
+										 Link for new module development in magento2 
+										 
+										 1st step:
+										  https://www.mageplaza.com/magento-2-module-development/
+										  2nd step:
+										  https://www.mageplaza.com/magento-2-module-development/magento-2-add-product-attribute-programmatically.html
+										  
+										  General info:
+										  https://blog.mdnsolutions.com/magento-2-create-product-attributes-and-options-programmatically/
+										  -----------------------------------------------------------------------------------------------------------
+										  
+										  
+										  
+										  
+										  
+	-----------------------------------------------------------------------------------------------------------									  
+	                                                           Cache clean from kitty:
+1. /www$ php bin/magento cache:clean
+2. 	/www$ php bin/magento cache:flush
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+                                                              Cache clean from File zilla:
+Home>www>Var>Cache
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+                                                             Backups of Magento in file zilla:
+home>www>var>backups
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+                                                      In Magento all CSV files should be stored in :
+www>var>import. 
+for media files:
+www>pub>media
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+                                                                 Magento 2 Guideline:
+     http://docs.magento.com/m2/ce/user_guide/catalog/swatches.html
+	 -----------------------------------------------------------------------------------------------------------
+	 -----------------------------------------------------------------------------------------------------------
+												  
+                                                    CSV files should be stored in Filezilla:
+www>var>import. 
+
+we mostly use the files like Mageexpo etc.... 
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+
+                                                                Importing files in Magento 2.1
+1. make csv file.
+2. put all csv file in www>var>import.
+3. go to magebees in magento and click "Import products". select the required file to import. 
+4. go to run file, click on validate and import file data. 
+5. click on import products.
+-----------------------------------------------------------------------------------------------------------
+								
+-----------------------------------------------------------------------------------------------------------
+
+               when we make any fresh installment on server it would be in directory
+www cd/ bin			   
+												  
+
+   For  fresh installment of Magento we use composer command on CLI
+   -----------------------------------------------------------------------------------------------------------
+   
+   -------------------------------------------------------------------------------------------------------------------------------------------
+   ::::: Once we have created a backup in Magento(it can be done by 2 ways 1. by Magento Admin panel   2. by command  magento backup).
+        ### if we want to use back files from local. we simply put those files into folder var>backups.
+		-------------------------------------------------------------------------------------------------------------------------------------
+   ------------------------------------------------------------------------------------------------------------------------------------------
+                                     Difference between cache:clean VS cache:flush
+   
+    some things are stored into the cache without the proper tags. cache:clean will not delete those.
+    other things might be using the same cache storage (this is not recommended, but sadly sometimes this is the case). Flushing the cache will result in everything being deleted. So if multiple Magento instances use the same cache storage or if you store your sessions in the same redis database you're using for the cache (please don't! :) then they will also be gone.
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   
+   

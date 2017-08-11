@@ -1,0 +1,89 @@
+http://devdocs.magento.com/videos/fundamentals/add-new-product-attribute/#step-2-create-an-installdata-script
+
+
+OPTION IN ARRAY		FIELD IN EAV	MEANING/EXAMPLES
+======================================================================================================================================================================
+type			backend type	field type (e. g. varchar: to be stored in the catalog_eav_varchar table)
+					varchar, decimal, int, text, static, datetime
+label					A label of the attribute (that is, how it will be rendered in the backend and on the frontend).
+input			frontend input	text, textarea, boolean, select, multiselect, image, price, date, gallery
+class			frontend class?	''
+source			source model	Special classes associated with the attribute, e. g. 'Learning\ClothingMaterial\Model\Attribute\Source\Material'
+frontend			frontend model	(script) defines how it should be rendered on the frontend
+					Special classes associated with the attribute, e. g. 'Learning\ClothingMaterial\Model\Attribute\Frontend\Material'
+backend			backend model	(script) allows you to perform certain actions when an attribute is loaded or saved. In our example, it will be validation.
+					Special classes associated with the attribute, e. g. 'Learning\ClothingMaterial\Model\Attribute\Backend\Material',
+
+global					defines the scope of its values (global, website, or store)
+					e. g. \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL
+
+visible					true/false
+required					false/true
+user_defined				false/true
+sort_order				e.g. 50,
+default					0
+
+searchable				false/true
+filterable				false/true
+comparable				false/true
+
+visible_on_front				false/true
+used_in_product_listing			false/true
+unique					false/true
+apply_to					''
+
+group					Means that we add an attribute to the attribute group “General”, which is present in all attribute sets.
+is_used_in_grid 				false/true
+is_visible_in_grid 			false/true
+is_filterable_in_grid			false/true
+is_html_allowed_on_front			Defines whether an attribute value may contain HTML
+visible_on_front				flag: defines whether an attribute should be shown on the “More Information” tab on the frontend
+
+
+
+======================================================================================================================================================================
+EXAMPLES
+======================================================================================================================================================================
+
+'clothing_material',
+            [
+                'group' => 'General',
+                'type' => 'varchar',
+                'label' => 'Clothing Material',
+                'input' => 'select',
+                'source' => 'Learning\ClothingMaterial\Model\Attribute\Source\Material',
+                'frontend' => 'Learning\ClothingMaterial\Model\Attribute\Frontend\Material',
+                'backend' => 'Learning\ClothingMaterial\Model\Attribute\Backend\Material',
+                'required' => false,
+                'sort_order' => 50,
+                'global' => \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL,
+                'is_used_in_grid' => false,
+                'is_visible_in_grid' => false,
+                'is_filterable_in_grid' => false,
+                'visible' => true,
+                'is_html_allowed_on_front' => true,
+                'visible_on_front' => true
+
+'customer_product_points',
+            [
+                'type' => 'decimal',
+                'backend' => '',
+                'frontend' => '',
+                'label' => 'Customer Product Points',
+                'input' => '',
+                'class' => '',
+                'source' => '',
+                'global' => \Magento\Catalog\Model\ResourceModel\Eav\Attribute::SCOPE_GLOBAL,
+                'visible' => true,
+                'required' => false,
+                'user_defined' => false,
+                'default' => 0,
+                'searchable' => false,
+                'filterable' => false,
+                'comparable' => false,
+                'visible_on_front' => false,
+                'used_in_product_listing' => false,
+                'unique' => false,
+                'apply_to' => ''
+
+	       
